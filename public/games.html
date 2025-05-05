@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIA eSports - Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="furia-header">
+        <div class="container">
+            <img src="images/furia-logo.png" alt="FURIA eSports" class="logo">
+            <h1>JOGOS DA FURIA</h1>
+            <p>Resultados completos e próximas partidas</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="back-button-container">
+            <button id="backButton" class="back-button">Voltar ao Chat</button>
+            <button id="refreshButton" class="refresh-button">Atualizar</button>
+        </div>
+
+        <div id="loading" class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Carregando dados...</p>
+        </div>
+
+        <div id="error" class="error-container" style="display: none;">
+            <p class="error-message"></p>
+            <button id="retryButton" class="retry-button">Tentar novamente</button>
+        </div>
+
+        <section class="matches-section">
+            <h2>Próximos Jogos</h2>
+            <div id="upcomingMatches" class="matches-container"></div>
+        </section>
+
+        <section class="matches-section">
+            <h2>Resultados Anteriores</h2>
+            <div id="pastMatches" class="matches-container"></div>
+        </section>
+    </main>
+
+    <footer class="furia-footer">
+        <div class="container">
+            <p>© 2025 FURIA eSports. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/games.js"></script>
+</body>
+</html>
